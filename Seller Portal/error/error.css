@@ -1,0 +1,40 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-image: url("../assets/error.jpg");
+    background-size: 90%;
+    background-position: 35% 17%;
+    background-repeat: no-repeat;
+}
+
+.staticComponents {
+    color: #036CA8;
+    margin-top: 1%;
+}
+
+.link {
+    position: absolute;
+    bottom: 4%;
+    left: 46%;
+    text-decoration: none;
+    color: crimson;
+    border-width: 2px;
+    border-color: crimson;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.link:hover {
+    position: absolute;
+    bottom: 4%;
+    left: 46%;
+    text-decoration: none;
+    color: white;
+    border-width: 2px;
+    background-color: crimson;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 7px;
+}

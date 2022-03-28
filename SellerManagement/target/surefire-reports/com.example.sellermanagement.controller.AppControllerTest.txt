@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.example.sellermanagement.controller.AppControllerTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 16.304 s <<< FAILURE! - in com.example.sellermanagement.controller.AppControllerTest
+testgetcurrentuser  Time elapsed: 0.073 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.util.NoSuchElementException: No value present
+	at com.example.sellermanagement.controller.AppControllerTest.testgetcurrentuser(AppControllerTest.java:85)
+Caused by: java.util.NoSuchElementException: No value present
+	at com.example.sellermanagement.controller.AppControllerTest.testgetcurrentuser(AppControllerTest.java:85)
+
+testdeleteaccount  Time elapsed: 0.016 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.util.NoSuchElementException: No value present
+	at com.example.sellermanagement.controller.AppControllerTest.testdeleteaccount(AppControllerTest.java:77)
+Caused by: java.util.NoSuchElementException: No value present
+	at com.example.sellermanagement.controller.AppControllerTest.testdeleteaccount(AppControllerTest.java:77)
+
+testlogin  Time elapsed: 0.031 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.util.NoSuchElementException: No value present
+	at com.example.sellermanagement.controller.AppControllerTest.testlogin(AppControllerTest.java:69)
+Caused by: java.util.NoSuchElementException: No value present
+	at com.example.sellermanagement.controller.AppControllerTest.testlogin(AppControllerTest.java:69)
+

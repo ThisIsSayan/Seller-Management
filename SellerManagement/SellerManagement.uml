@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/sayanhazra/Desktop/WorkSpace/Virtusa_Training/DummyProject_FinalVersion/SellerManagement/src/main/java/com/example/sellermanagement</OriginalElement>
+  <nodes>
+    <node x="571.0535714285714" y="753.0">com.example.sellermanagement.entity.ProductDTO</node>
+    <node x="330.05357142857144" y="720.0">com.example.sellermanagement.entity.UserDTO</node>
+    <node x="421.0" y="1993.0">com.example.sellermanagement.SellerManagementApplication</node>
+    <node x="1165.460227272727" y="99.0">com.example.sellermanagement.entity.GetUsers</node>
+    <node x="496.5" y="1452.0">com.example.sellermanagement.controller.AppController</node>
+    <node x="912.4602272727271" y="33.0">com.example.sellermanagement.entity.Product</node>
+    <node x="1635.710227272727" y="0.0">com.example.sellermanagement.entity.User</node>
+    <node x="2077.0" y="1661.0">com.example.sellermanagement.service.MyUserDetailsService</node>
+    <node x="1339.460227272727" y="1017.5">com.example.sellermanagement.repo.ProductRepo</node>
+    <node x="77.05357142857133" y="819.0">com.example.sellermanagement.entity.ProductEntry</node>
+    <node x="598.4237012987012" y="132.0">com.example.sellermanagement.entity.CurrentUser</node>
+    <node x="2017.5535714285713" y="907.0">com.example.sellermanagement.entity.MyUserDetails</node>
+    <node x="1693.5535714285716" y="1017.5">com.example.sellermanagement.repo.UserRepo</node>
+    <node x="1374.530844155844" y="1452.0">com.example.sellermanagement.serviceimpl.AppServiceImpl</node>
+    <node x="0.0" y="1993.0">com.example.sellermanagement.config.SecurityConfig</node>
+    <node x="986.4602272727271" y="830.5">com.example.sellermanagement.service.AppService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.sellermanagement.controller.AppController" target="com.example.sellermanagement.entity.User" relationship="CREATE">
+      <point x="113.75" y="-248.0" />
+      <point x="740.25" y="1431.0" />
+      <point x="1328.960227272727" y="1431.0" />
+      <point x="1328.960227272727" y="670.0" />
+      <point x="1746.210227272727" y="670.0" />
+      <point x="0.0" y="325.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.controller.AppController" target="com.example.sellermanagement.entity.CurrentUser" relationship="DEPENDENCY">
+      <point x="-113.75" y="-248.0" />
+      <point x="512.75" y="1431.0" />
+      <point x="0.0" y="1431.0" />
+      <point x="0.0" y="700.0" />
+      <point x="708.9237012987012" y="700.0" />
+      <point x="0.0" y="193.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.service.MyUserDetailsService" target="com.example.sellermanagement.repo.UserRepo" relationship="TO_ONE">
+      <point x="-102.0" y="-39.0" />
+      <point x="2128.0" y="1431.0" />
+      <point x="1845.5535714285716" y="1431.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.example.sellermanagement.serviceimpl.AppServiceImpl" target="com.example.sellermanagement.entity.GetUsers" relationship="CREATE">
+      <point x="47.42857142857156" y="-248.0" />
+      <point x="1587.9594155844156" y="1411.0" />
+      <point x="1672.0535714285716" y="1411.0" />
+      <point x="1672.0535714285716" y="680.0" />
+      <point x="1275.960227272727" y="680.0" />
+      <point x="0.0" y="226.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.service.AppService" target="com.example.sellermanagement.entity.User" relationship="DEPENDENCY">
+      <point x="124.5" y="-214.5" />
+      <point x="1276.960227272727" y="670.0" />
+      <point x="1746.210227272727" y="670.0" />
+      <point x="0.0" y="325.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.serviceimpl.AppServiceImpl" target="com.example.sellermanagement.service.AppService" relationship="REALIZATION">
+      <point x="-94.85714285714289" y="-248.0" />
+      <point x="1445.6737012987012" y="1391.0" />
+      <point x="1235.460227272727" y="1391.0" />
+      <point x="83.0" y="214.5" />
+    </edge>
+    <edge source="com.example.sellermanagement.service.AppService" target="com.example.sellermanagement.entity.Product" relationship="DEPENDENCY">
+      <point x="-41.5" y="-214.5" />
+      <point x="1110.960227272727" y="690.0" />
+      <point x="1028.960227272727" y="690.0" />
+      <point x="0.0" y="292.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.serviceimpl.AppServiceImpl" target="com.example.sellermanagement.entity.Product" relationship="CREATE">
+      <point x="0.0" y="-248.0" />
+      <point x="1540.530844155844" y="1401.0" />
+      <point x="1642.960227272727" y="1401.0" />
+      <point x="1642.960227272727" y="690.0" />
+      <point x="1028.960227272727" y="690.0" />
+      <point x="0.0" y="292.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.controller.AppController" target="com.example.sellermanagement.entity.GetUsers" relationship="DEPENDENCY">
+      <point x="48.75" y="-248.0" />
+      <point x="675.25" y="1411.0" />
+      <point x="925.4602272727271" y="1411.0" />
+      <point x="925.4602272727271" y="680.0" />
+      <point x="1275.960227272727" y="680.0" />
+      <point x="0.0" y="226.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.service.AppService" target="com.example.sellermanagement.entity.GetUsers" relationship="DEPENDENCY">
+      <point x="41.5" y="-214.5" />
+      <point x="1193.960227272727" y="680.0" />
+      <point x="1275.960227272727" y="680.0" />
+      <point x="0.0" y="226.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.serviceimpl.AppServiceImpl" target="com.example.sellermanagement.entity.User" relationship="CREATE">
+      <point x="94.85714285714289" y="-248.0" />
+      <point x="1635.387987012987" y="1421.0" />
+      <point x="1683.0535714285716" y="1421.0" />
+      <point x="1683.0535714285716" y="670.0" />
+      <point x="1746.210227272727" y="670.0" />
+      <point x="0.0" y="325.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.controller.AppController" target="com.example.sellermanagement.entity.ProductEntry" relationship="DEPENDENCY">
+      <point x="-48.75" y="-248.0" />
+      <point x="577.75" y="1411.0" />
+      <point x="193.55357142857133" y="1411.0" />
+      <point x="0.0" y="226.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.serviceimpl.AppServiceImpl" target="com.example.sellermanagement.entity.CurrentUser" relationship="CREATE">
+      <point x="-142.28571428571422" y="-248.0" />
+      <point x="1398.2451298701299" y="1401.0" />
+      <point x="814.5535714285714" y="1401.0" />
+      <point x="814.5535714285714" y="700.0" />
+      <point x="708.9237012987012" y="700.0" />
+      <point x="0.0" y="193.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.service.AppService" target="com.example.sellermanagement.entity.CurrentUser" relationship="DEPENDENCY">
+      <point x="-124.5" y="-214.5" />
+      <point x="1027.960227272727" y="700.0" />
+      <point x="708.9237012987012" y="700.0" />
+      <point x="0.0" y="193.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.serviceimpl.AppServiceImpl" target="com.example.sellermanagement.repo.ProductRepo" relationship="TO_ONE">
+      <point x="-47.42857142857133" y="-248.0" />
+      <point x="1493.1022727272727" y="1431.0" />
+      <point x="1485.960227272727" y="1431.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.example.sellermanagement.service.MyUserDetailsService" target="com.example.sellermanagement.entity.MyUserDetails" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.0" />
+      <point x="2230.0" y="1431.0" />
+      <point x="2218.0535714285716" y="1431.0" />
+      <point x="0.0" y="138.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.controller.AppController" target="com.example.sellermanagement.service.AppService" relationship="TO_ONE">
+      <point x="81.25" y="-248.0" />
+      <point x="707.75" y="1421.0" />
+      <point x="1069.460227272727" y="1421.0" />
+      <point x="-83.0" y="214.5" />
+    </edge>
+    <edge source="com.example.sellermanagement.entity.MyUserDetails" target="com.example.sellermanagement.entity.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-138.0" />
+      <point x="2218.0535714285716" y="670.0" />
+      <point x="1746.210227272727" y="670.0" />
+      <point x="0.0" y="325.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.repo.UserRepo" target="com.example.sellermanagement.entity.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.5" />
+      <point x="1845.5535714285716" y="670.0" />
+      <point x="1746.210227272727" y="670.0" />
+      <point x="0.0" y="325.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.repo.ProductRepo" target="com.example.sellermanagement.entity.Product" relationship="DEPENDENCY">
+      <point x="1.1368683772161603E-13" y="-27.5" />
+      <point x="1485.9602272727273" y="690.0" />
+      <point x="1028.960227272727" y="690.0" />
+      <point x="0.0" y="292.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.controller.AppController" target="com.example.sellermanagement.entity.ProductDTO" relationship="DEPENDENCY">
+      <point x="16.25" y="-248.0" />
+      <point x="642.75" y="1401.0" />
+      <point x="687.5535714285714" y="1401.0" />
+      <point x="0.0" y="292.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.service.MyUserDetailsService" target="com.example.sellermanagement.entity.User" relationship="DEPENDENCY">
+      <point x="102.0" y="-39.0" />
+      <point x="2332.0" y="1431.0" />
+      <point x="2429.0535714285716" y="1431.0" />
+      <point x="2429.0535714285716" y="670.0" />
+      <point x="1746.210227272727" y="670.0" />
+      <point x="0.0" y="325.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.serviceimpl.AppServiceImpl" target="com.example.sellermanagement.repo.UserRepo" relationship="TO_ONE">
+      <point x="142.28571428571422" y="-248.0" />
+      <point x="1682.8165584415583" y="1431.0" />
+      <point x="1845.5535714285716" y="1431.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.example.sellermanagement.controller.AppController" target="com.example.sellermanagement.entity.UserDTO" relationship="DEPENDENCY">
+      <point x="-16.25" y="-248.0" />
+      <point x="610.25" y="1401.0" />
+      <point x="440.55357142857144" y="1401.0" />
+      <point x="0.0" y="325.0" />
+    </edge>
+    <edge source="com.example.sellermanagement.controller.AppController" target="com.example.sellermanagement.entity.Product" relationship="CREATE">
+      <point x="-81.25" y="-248.0" />
+      <point x="545.25" y="1421.0" />
+      <point x="66.55357142857133" y="1421.0" />
+      <point x="66.55357142857133" y="690.0" />
+      <point x="1028.960227272727" y="690.0" />
+      <point x="0.0" y="292.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3597589244320816" showDependencies="true" x="1215.0" y="1068.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
